@@ -5,7 +5,7 @@ int led3=5;
 int socket=6;
 
 void setup() {
-  // put your setup code  here, to run once:
+
 Serial.begin(9600);
 pinMode(13,OUTPUT);
 pinMode(led1,OUTPUT);
