@@ -41,5 +41,3 @@
 - Do not force the servo motor manually to avoid damage.
 - Handle electronic components carefully to prevent static damage.
 
-This guide ensures proper setup of the smart dustbin system for smooth functionality.
-
