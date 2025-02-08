@@ -1,0 +1,56 @@
+**Smart Dustbin Setup Guide**
+
+**Components Required:**
+1. Arduino Board (Uno, Mega, etc.)
+2. Ultrasonic Sensor (HC-SR04)
+3. Two Servo Motors (SG90 or MG995)
+4. LED
+5. Jumper Wires
+6. Power Source (USB Cable or 9V Battery)
+
+**Wiring Instructions:**
+1. **Ultrasonic Sensor (HC-SR04):**
+   - VCC to 5V on Arduino
+   - GND to GND on Arduino
+   - Trig to Digital Pin 5
+   - Echo to Digital Pin 6
+
+2. **Servo Motors:**
+   - Servo 1:
+     - Red (VCC) to 5V on Arduino
+     - Black (GND) to GND on Arduino
+     - Signal (Yellow/Orange) to Digital Pin 7
+   - Servo 2:
+     - Red (VCC) to 5V on Arduino
+     - Black (GND) to GND on Arduino
+     - Signal (Yellow/Orange) to Digital Pin 8
+
+3. **LED:**
+   - Positive (Anode) to Digital Pin 9 (via a 220-ohm resistor)
+   - Negative (Cathode) to GND on Arduino
+
+**Code Upload Instructions:**
+1. Connect the Arduino to your PC via USB cable.
+2. Open Arduino IDE.
+3. Copy and paste the smart dustbin code into the Arduino IDE.
+4. Click on **Verify** to check for errors.
+5. Click on **Upload** to upload the code to the Arduino board.
+
+**Troubleshooting:**
+- If the servo motors are not responding, check their wiring and ensure they are properly powered.
+- If the ultrasonic sensor is not detecting distance, verify connections and try replacing the sensor.
+- If the LED does not turn on, check the resistor and wiring.
+- Ensure correct COM port is selected in the Arduino IDE.
+
+**Notes:**
+- Ensure the servo motors are not overloaded.
+- Modify the distance threshold in the code if needed.
+- Use an external power supply if the servo does not function properly due to insufficient power from the Arduino board.
+
+**Safety Precautions:**
+- Avoid short circuits while connecting wires.
+- Do not force the servo motors manually to avoid damage.
+- Handle electronic components carefully to prevent static damage.
+
+This guide ensures proper setup of the smart dustbin system for smooth functionality.
+
