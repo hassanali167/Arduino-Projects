@@ -1,0 +1,52 @@
+**Smart Dustbin Setup Guide**
+
+**Components Required:**
+1. Arduino Board (Uno, Mega, etc.)
+2. Ultrasonic Sensor (HC-SR04)
+3. Light Sensor (LDR)
+4. Four LEDs
+5. Jumper Wires
+6. Power Source (USB Cable or 9V Battery)
+
+**Wiring Instructions:**
+1. **Ultrasonic Sensor (HC-SR04):**
+   - VCC to 5V on Arduino
+   - GND to GND on Arduino
+   - Trig to Digital Pin 2
+   - Echo to Digital Pin 3
+
+2. **Light Sensor (LDR) with Resistor:**
+   - One leg of LDR to 5V
+   - Other leg of LDR to Analog Pin A0 and a 10kΩ resistor to GND
+
+3. **LEDs:**
+   - LED1 Anode to Digital Pin 5, Cathode to GND (via a 220Ω resistor)
+   - LED2 Anode to Digital Pin 6, Cathode to GND (via a 220Ω resistor)
+   - LED3 Anode to Digital Pin 7, Cathode to GND (via a 220Ω resistor)
+   - LED4 Anode to Digital Pin 8, Cathode to GND (via a 220Ω resistor)
+
+**Code Upload Instructions:**
+1. Connect the Arduino to your PC via USB cable.
+2. Open Arduino IDE.
+3. Copy and paste the smart dustbin code into the Arduino IDE.
+4. Click on **Verify** to check for errors.
+5. Click on **Upload** to upload the code to the Arduino board.
+
+**Troubleshooting:**
+- If the LEDs are not turning on, check wiring and resistor connections.
+- If the ultrasonic sensor is not detecting distance, verify connections and try replacing the sensor.
+- If the light sensor is not working, check its wiring and resistor setup.
+- Ensure correct COM port is selected in the Arduino IDE.
+
+**Notes:**
+- Adjust the `ANALOG_THRESHOLD` value if necessary to optimize the light sensor sensitivity.
+- Ensure the LEDs are not overloaded.
+- Use an external power supply if multiple components cause insufficient power issues.
+
+**Safety Precautions:**
+- Avoid short circuits while connecting wires.
+- Do not apply excessive force to components.
+- Handle electronic components carefully to prevent static damage.
+
+This guide ensures proper setup of the smart dustbin system for smooth functionality.
+
